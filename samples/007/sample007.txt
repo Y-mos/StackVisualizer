@@ -1,0 +1,7 @@
+[line,thin,with,stack,and|line,thick,with,block
+F10
+L1
+l3
+Pb
+Pr
+E

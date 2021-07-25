@@ -1,0 +1,12 @@
+[a,b,c
+[width1,width2,width3,width4
+W150
+[maintained,is,width,and|changed,is,height
+H50
+[font,large
+F50
+[dflt.
+F-1
+W-13
+H0
+E

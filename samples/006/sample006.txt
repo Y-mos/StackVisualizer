@@ -1,0 +1,4 @@
+[y-dir.,in,the gap,changed
+W100
+Y10
+E
