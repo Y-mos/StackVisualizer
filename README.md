@@ -1,34 +1,34 @@
 # StackVisualizer
 スタックの状態を図示するpython3プログラム
 
-スタック志向プログラミング言語の解説用に製作（誰得）
+スタック志向プログラミング言語の解説用に製作しました（誰得）。
 
 ## デモ
-スタックの状態を記述したテキストファイルを作る。
+スタックの状態を記述したテキストファイルを作ります。
 
 ```
 [1,2,3
 E
 ```
 
-これを「sample001.txt」という名前で保存し、stackVisualizer.pyを実行
+これを「sample001.txt」という名前で保存し、stackVisualizer.pyを実行します。
 
 ```
 python3 ./stackVisualizer.py sample001.txt
 ```
 
-以下の画像が出力される
+以下の画像が出力されます。
 
 ![出力画像](samples/001/sample001.txt-1.png)
 
 ## 特徴
 
-- スタックの状態図を効率よく作成可能。
-- 出力画像はSVG、PNGの2種類出力される。
+- スタックの状態図を効率よく作成できます。
+- 出力画像はSVG（ベクタ）、PNG（ラスタ）の2種類出力されます。
 
 ## 必要な環境
 
-バージョンはいずれも検証時のもの。
+バージョンはいずれも検証時のものです。
 
 - python3 (3.9.6)
 - 以下のpythonモジュール
@@ -39,12 +39,12 @@ python3 ./stackVisualizer.py sample001.txt
 
 特別なインストール手続きは不要です。
 
-あえて手順を書くなら以下の通り。
+あえて手順を書くなら以下の通りです。
 
 1. python3をインストールする。
 2. pip3 installなどを駆使して、svgwriteとCairoSVGをインストールする。
 3. stackVisualizer.pyをお好みのディレクトリに配置する。
-4. 実行する。
+4. 実行する。例えば以下のように。
 ```
 python3 ./stackVisualizer.py sample001.txt
 ```
@@ -77,7 +77,7 @@ stackVisualizer.pyはテキストファイルを1つ引数に取ります。
 
 この行がないと記述通りの挙動とならない場合があります（後述）。
 
-### コメント %
+### コメント `%`
 
 行頭が`%`の行は、コメントを表します。
 
@@ -180,7 +180,6 @@ E
 
 ```
 python3 stackVisualizer.py sample003.txt
-
 ```
 
 この時、1つ目の画像は「sample003.txt-first.svg」（または.png）となります。
