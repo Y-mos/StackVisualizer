@@ -75,7 +75,6 @@ if __name__=='__main__':
 	with open(ifname,'r') as fptr:
 		for line in fptr:
 			if len(line)>=2:
-				isSaved=False
 				if line[0]=='[':
 					if prms['ofsuffix']=='':
 						prms['ofsuffix']='{}'.format(ofindex)
@@ -83,7 +82,6 @@ if __name__=='__main__':
 					stack,cols=split(line[1:-1])
 					cnt=0
 					ofindex+=1
-					isSaved=True
 					prms['ofsuffix']=''
 				elif line[0]=='E':
 					break
@@ -122,7 +120,7 @@ if __name__=='__main__':
 				elif line[0]=='l':
 					argint=int(line[1:-1])
 					prms['lw_block']=argint if argint>0 else prmsDef['lw_block']
-		if isSaved is False:
+		if True:
 			if prms['ofsuffix']=='':
 				prms['ofsuffix']='{}'.format(ofindex)
 			drawStack(ifname,stack,cols,prms)
