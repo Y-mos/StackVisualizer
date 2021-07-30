@@ -97,6 +97,8 @@ if __name__=='__main__':
 						cnt+=1
 				elif line[0]=='S':
 					prms['ofsuffix']=line[1:-1]
+				elif line[0]=='N':
+					prms['ofsuffix']='{}'.format(ofindex)+'-'+line[1:-1]
 				elif line[0]=='D':
 					prms['dir']=line[1:-1]
 				elif line[0]=='W':
